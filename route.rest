@@ -1,0 +1,31 @@
+GET  http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6016fd93849fcf49908192d8
+
+###
+
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "chidie",
+    "subscribeToChannels": "web async"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/6016fd93849fcf49908192d8
+Content-Type: application/json
+
+{
+    "name": "tinuke",
+    "subscribeToChannels": "music channel"
+}
+
+
+###
+
+DELETE  http://localhost:3000/subscribers/6016fe0a01399651c07e43c4
